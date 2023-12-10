@@ -55,7 +55,7 @@ body{
 	border: solid rgba(120,177,244,1);
 	font-size: 18px;
 }
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:600px) {
     .main {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
