@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="chatinterface.css">
+    <script type="text/javascript" src="chatinterface.js"></script>
+    <title>Simple Chat</title>
+</head>
+<body>
+    <div class="main">
+        <div class="first-participant" id="user">
+            <div class="user-icon" id="second-username-output"></div>
+            <div class="message-box" id="user-messages"></div>
+            <div class="input-container">
+                <input class="typebox" type="text" id="user-input" placeholder="Type your message...">
+                <input class="button-submit" type="button" onclick="sendMessage('user')"></input>
+            </div>
+        </div>
+        <div class="second-participant" id="other">
+            <div class="user-icon" id="first-username-output"></div>
+            <div class="message-box" id="other-messages"></div>
+            <div class="input-container">
+                <input class="typebox" type="text" id="other-input" placeholder="Type your message...">
+                <input class="button-submit" type="button" onclick="sendMessage('other')"></input>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
