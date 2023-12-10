@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: brush script m7, cursive;
+    background: rgb(255,110,174);
+    background: linear-gradient(35deg, rgba(252,135,187,100) 0%, rgba(120,177,244,1) 100%);
+    background-size: cover;
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.main{
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: 1fr 1fr;
+}
+.first-participant, .second-participant{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.message-box {
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+.message-box::-webkit-scrollbar {
+    display: none;
+}
+.message-box {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.user-icon{
+    margin: 10px 0 0 10px;
+    background-image: url(usericon.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.message{
+    width: fit-content;
+    background-color: rgba(120,177,244,1);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px 0 8px auto;
+    word-wrap: break-word;
+}
+.message1{
+    width: fit-content;
+    background-color: rgba(252,135,187,100);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px 0 8px 0;
+    word-wrap: break-word;
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.typebox{
+    height: 15px;
+    font-family: brush script m7, cursive;
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.button-submit{
+    background-color: rgba(120,177,244,0.5);
+    width: 25%;
+    padding: 10px;
+    background-image: url(send.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgba(57,144,245,1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width:425px) {
+    .main {
+        grid-gap: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+.time{
+  font-size: 8px;
+  text-align: center;
+}
