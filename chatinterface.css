@@ -86,7 +86,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:600px) {
     .main {
         grid-gap: 50px;
         grid-template-columns: 1fr;
