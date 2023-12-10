@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="joininterface.css">
+    <script type="text/javascript" src="joininterface.js"></script>
+    <title>Log-in</title>
+</head>
+<body>
+    <form action="chatinterface.html" method="post">
+        <div class="main">            
+            <div class="first-user">
+                <div class="adjust">
+                    <label for="first-username">Enter your username:</label>
+                    <input class="nicknames" type="text" id="first-user-holder" required>
+                </div>
+            </div>
+            <div class="second-user">
+                <div class="adjust">
+                    <label for="second-username">Enter your username:</label>
+                    <input class="nicknames" type="text" id="second-user-holder" required>
+                </div>
+            </div>
+        </div>
+        <div class="button-design">
+            <input type="submit" onclick="getusername()" class="button" value="Register">
+        </div>
+    </form>
+</body>
+</html>
